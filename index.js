@@ -10,6 +10,7 @@ const { readdirSync, fstat } = require("fs");
 const ascii = require("ascii-table");
 const fs = require("fs");
 
+require('events').EventEmitter.defaultMaxListeners = 100;
 
 
 let botname = "Best In One Place"
